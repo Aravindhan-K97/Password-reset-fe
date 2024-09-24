@@ -8,7 +8,7 @@ const ForgotPasswordPage = () => {
 
   const handleForgotPassword = async () => {
     try {
-      await axios.post('http://localhost:3000/auth/forgot-password', { email });
+      await axios.post('https://password-reset-be-1-cw65.onrender.com/auth/forgot-password', { email });
       alert('Password reset link sent to your email');
     } catch (error) {
       if (error.response && error.response.status === 404) {

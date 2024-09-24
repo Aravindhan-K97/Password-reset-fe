@@ -10,7 +10,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/auth/login', { email, password });
+      const response = await axios.post('https://password-reset-be-1-cw65.onrender.com/auth/login', { email, password });
       // Debugging line to check response
       console.log('Server Response:', response.data); 
 

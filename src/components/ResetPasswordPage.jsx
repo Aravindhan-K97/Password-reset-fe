@@ -14,7 +14,7 @@ const ResetPasswordPage = () => {
       return;
     }
     try {
-      await axios.post(`http://localhost:3000/auth/reset-password/${token}`, { password, repeatPassword });
+      await axios.post(`https://password-reset-be-1-cw65.onrender.com/auth/reset-password/${token}`, { password, repeatPassword });
       alert('Password reset completed');
     } catch (error) {
       alert('Error resetting password');

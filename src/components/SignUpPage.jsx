@@ -15,7 +15,7 @@ const SignUpPage = () => {
       return;
     }
     try {
-      await axios.post('http://localhost:3000/auth/signup', { username, email, password, repeatPassword });
+      await axios.post('https://password-reset-be-1-cw65.onrender.com/auth/signup', { username, email, password, repeatPassword });
       alert('Sign-up successful');
       setUsername('');
       setEmail('');
