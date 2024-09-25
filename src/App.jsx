@@ -10,8 +10,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <Router>
-      <div>
+          <div>
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<LoginPage />} />
@@ -22,8 +21,7 @@ const App = () => {
           <Route path="/home"element={<HomePage />}/>
         </Routes>
       </div>
-    </Router>
-    </BrowserRouter>
+     </BrowserRouter>
   );
 };
 
