@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
 import ForgotPasswordPage from './components/ForgotPasswordPage';
@@ -9,6 +9,7 @@ import HomePage from './components/HomePage';
 const App = () => {
 
   return (
+    <BrowserRouter>
     <Router>
       <div>
         <Routes>
@@ -22,6 +23,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    </BrowserRouter>
   );
 };
 
